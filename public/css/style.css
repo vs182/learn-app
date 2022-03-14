@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    background: url(../Assets/template.png) no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    margin: auto;
+}
+
+.logo-text {
+    z-index: 2;
+    position: absolute;
+    width: 136px;
+    height: 46px;
+    left: 64px;
+    top: 38px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    color: #000000;
+}
+
+.content {
+    z-index: 2;
+    position: absolute;
+    width: 743px;
+    height: 126px;
+    left: 64px;
+    top: 376px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 77px;
+    /* or 143% */
+    letter-spacing: 0.015em;
+    color: #000000;
+}
+
+.home {
+    z-index: 2;
+    position: absolute;
+    width: auto;
+    height: 27px;
+    left: 820px;
+    top: 48px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.project {
+    z-index: 2;
+    position: absolute;
+    width: auto;
+    height: 27px;
+    left: 974px;
+    top: 48px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.design {
+    z-index: 2;
+    position: absolute;
+    width: auto;
+    height: 27px;
+    left: 1130px;
+    top: 48px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.about {
+    z-index: 2;
+    position: absolute;
+    width: auto;
+    height: 27px;
+    left: 1314px;
+    top: 48px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.blog {
+    z-index: 2;
+    position: absolute;
+    width: auto;
+    height: 27px;
+    left: 1468px;
+    top: 48px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.profile img {
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 1779px;
+    top: 26px;
+    border-radius: 50px;
+}
+
+.front-img img {
+    z-index: 2;
+    position: absolute;
+    width: 1032px;
+    height: 732px;
+    left: 855px;
+    top: 348px;
+}
+
+.start-btn {
+    position: absolute;
+    width: 252px;
+    height: 79px;
+    left: 190px;
+    top: 623px;
+    background: rgba(0, 26, 255, 0.71);
+    border-radius: 50px;
+}
+
+.btn-text {
+    position: absolute;
+    width: 190px;
+    height: 58px;
+    left: 217px;
+    top: 625px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 77px;
+    /* or 248% */
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
+
+#visual {
+    position: absolute;
+    width: 688px;
+    height: 519px;
+    left: -400px;
+    top: -25px;
+}
+
+#box {
+    position: absolute;
+    width: 532.77px;
+    height: 529.49px;
+    left: -245.62px;
+    top: 731px;
+    transform: rotate(1.56deg);
+}
+
+#visual2 {
+    position: absolute;
+    width: 975px;
+    height: 507px;
+    left: 173px;
+    top: 109px;
+    border-radius: 3px;
+}
+
+#box3 {
+    z-index: 2;
+    position: absolute;
+    width: 216px;
+    height: 208px;
+    left: 1085px;
+    top: 226.12px;
+    animation: animi 10s reverse ease-in-out infinite;
+    transform: rotate(-9.09deg);
+}
+
+#box4 {
+    position: absolute;
+    left: 92.03%;
+    right: 1.11%;
+    top: 39.25%;
+    bottom: 48.56%;
+    z-index: 2;
+    transform: rotate(-10.47deg);
+    animation: animi 10s ease-in-out infinite;
+}
+
+.home:hover {
+    color: #001AFF;
+}
+
+.about:hover {
+    color: #001AFF;
+}
+
+.project:hover {
+    color: #001AFF;
+}
+
+.blog:hover {
+    color: #001AFF;
+}
+
+.design:hover {
+    color: #001AFF;
+}
+
+@keyframes animi {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/addcourse.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop-Edit</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="course_container" class="course-container">
+            <div>
+                <form class="course" action="/update" method="post">
+                    <input hidden type="text" value="<%= user.id %>" name="id">
+                    <p class="aa"><a href="/url_converter">Click here For Converter</a></p>
+                    <input required name="new_url" id="vdurl" class="field" value="<%= user.url %>" placeholder="Youtube Url" type="text">
+                    <button class="check" onclick="vd()">check</button>
+                    <input required name="new_name" value="<%= user.course_name %>" class="field" placeholder="Title" type="text">
+                    <textarea required name="new_desc" id="" cols="30" placeholder="Description" rows="10"><%= user.descs %></textarea>
+                    <input type="submit" class="field" value="Edit">
+                </form>
+            </div>
+        </div>
+        <div id="cc" class="vc"></div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/learn.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop</title>
+</head>
+
+<body class="bg2">
+    <div id="container" class="main-container">
+        <p class="logo-text">Drop</p>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search..">
+            <button class="search-button">
+            <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="nav">
+            <a class="home" style="color: #001AFF;" href="/videos">Course</a>
+            <a class="project" href="">Design</a>
+            <a class="design" href="">Docs</a>
+        </div>
+
+        <div class="profile">
+            <% users.forEach(function(user){%>
+                <img src="data:image/png;base64,<%= user.user_profile %>" alt="">
+                <% }); %>
+        </div>
+
+        <div id="video_container" class="video-container">
+            <div id="cards" class="cards">
+                <a href="/add"><i class="fas fa-plus"></i></a>
+            </div>
+            <% users.slice(1).forEach(function(user){%>
+                <div id="card" class="card">
+                    <iframe width="1280" height="720" src="<%= user.url %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p><button><%= user.name %>
+                    <a href="edit/<%= user.course_name%>/<%= user.id %>">Edit</a>
+                    <a href="delete/<%= user.course_name %>/<%= user.id %>">Delete</a>
+                </button></p>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

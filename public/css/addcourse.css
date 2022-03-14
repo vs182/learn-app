@@ -1,0 +1,199 @@
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+    body {
+        background: url(../Assets/template.png) no-repeat;
+        background-size: cover;
+    }
+    
+    .video-container {
+        position: absolute;
+        top: 10%;
+        min-height: 90vh;
+        width: 90vw;
+        grid-template-columns: repeat(3, 2fr);
+        grid-template-rows: repeat(3, 2fr);
+        display: grid
+    }
+    
+    .videos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 430px;
+        height: 408px;
+        margin: 40px auto 40px auto;
+        text-align: center;
+        font-family: arial;
+        border-radius: 30px;
+        border: 5px #001AFF solid;
+    }
+    
+    .fas {
+        color: #001AFF;
+        font-size: 60px;
+        cursor: pointer;
+    }
+    
+    .plus {
+        background: none;
+        border: none;
+    }
+    
+    .course {
+        position: absolute;
+        width: 684px;
+        height: 916px;
+        left: 618px;
+        top: 100px;
+        background: transparent;
+        border-radius: 32px;
+        border: 5px #001AFF solid;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .field {
+        padding: 20px;
+        font-size: 28px;
+        margin: 20px;
+        width: 473px;
+        height: 69.87px;
+        background: transparent;
+        border: 3px solid #001AFF;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
+    
+    select {
+        padding: 20px;
+        font-size: 28px;
+        margin: 20px;
+        width: 473px;
+        height: 72.87px;
+        background: transparent;
+        border: 3px solid #001AFF;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
+    
+    textarea {
+        padding: 20px;
+        font-size: 28px;
+        width: 473px;
+        height: 203.15px;
+        background: transparent;
+        border: 3px solid #001AFF;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    
+    a {
+        cursor: pointer;
+        transition: 1.2s;
+    }
+    
+    .vc {
+        border-radius: 20px;
+        transform: translate(1400px, -800px);
+        z-index: 2;
+        height: 100px;
+        width: 300px;
+    }
+    
+    p {
+        font-family: Comfortaa;
+        color: green;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+        font-family: Comfortaa;
+        text-align: center;
+    }
+    
+    .check {
+        position: absolute;
+        width: 60px;
+        height: 52px;
+        left: 590px;
+        top: 164px;
+        color: white;
+        background: rgba(0, 26, 255, 0.71);
+        border-radius: 50px;
+    }
+    
+    iframe {
+        border-radius: 20px;
+        height: 500px;
+        width: 500px;
+    }
+    
+    .check:hover {
+        border: 2px solid #001AFF;
+        color: #001AFF;
+        background: white;
+    }
+    
+    .container {
+        justify-content: center;
+        min-height: 100vh;
+        z-index: 15;
+        display: flex;
+        align-items: center;
+    }
+    
+    .course_container .converter {
+        justify-content: center;
+        display: block;
+        align-items: center;
+        border-radius: 10px;
+        width: auto;
+    }
+    
+    .convert {
+        padding: 10px;
+        background: none;
+        border: 3px solid #001AFF;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .output {
+        font-family: Comfortaa;
+        color: green;
+    }
+    
+    .calc {
+        border-radius: 20px;
+        border: 3px solid #001AFF;
+        padding: 20px;
+        min-height: 50vh;
+        justify-content: center;
+        display: block;
+        align-items: center;
+    }
+    
+    #output {
+        cursor: none;
+    }
+    
+    a:hover {
+        color: #001AFF;
+    }
+    
+    .aa {
+        border-bottom: 3px dashed #001AFF;
+    }
+    
+    #back {
+        margin-top: 20%;
+        margin-left: 35%;
+        padding: 10px;
+        background: none;
+        width: 100px;
+        border: 3px solid #001AFF;
+        border-radius: 10px;
+        cursor: pointer;
+    }

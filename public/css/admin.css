@@ -1,0 +1,27 @@
+.cards {
+    width: 430px;
+    height: 408px;
+    margin: 20px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 5px solid #001AFF;
+  }
+  
+  .fa-plus{
+      font-size: 60px;
+      color: #001AFF;
+  }
+
+.card p button a{
+      text-decoration: none;
+      color: white;
+      padding: 50px;
+  }
+
+  .card p button a:hover{
+      color: yellow;
+  }

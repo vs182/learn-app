@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa;
+}
+.main-container{
+    min-height: 100vh;
+    background: #FFFFFF;
+}
+.align{
+    align-items: center;
+    justify-content: center;
+}
+.login-container{
+    position: absolute;
+    width: 518px;
+    height: 770px;
+    left: 1198px;
+    top: 174px;
+    display: flex;
+    background: #FFFFFF;
+    border: 5px solid rgba(0, 26, 255, 0.5);
+    border-radius: 29px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.l-text{
+    font-size: 24px;
+    color: #000000;
+}
+input[type="file"]{
+    font-size: 24px;
+    opacity: 0;
+    z-index: 2;
+    color: #000000;
+}
+.inputs{
+    margin: 20px;
+    display: flex;
+    color: #000000;
+    z-index: 2;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 423px;
+    font-size: 24px;
+    height: 69px; 
+    background: rgba(0, 26, 255,0.01);
+    border: 3px solid #001AFF;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+button{
+    background: rgba(0, 26, 255,0.01);
+    z-index: 2;
+    width: 152px;
+    height: 70.86px;
+    border: 3px solid #001AFF;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.quote{
+    position: absolute;
+    width: 743px;
+    height: 126px;
+    left: 89px;
+    top: 379px;
+
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 77px;
+
+    /* or 143% */
+    letter-spacing: 0.015em;
+
+    color: #000000;
+}
+.head{
+    line-height: 90px;
+    font-size: 24px;
+    color: black;
+}
+
+.acc{
+    line-height: 90px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.box1{
+    position: absolute;
+width: 288px;
+height: 278.64px;
+left: -114px;
+top: 75px;
+
+
+}
+
+.box2{
+    position: absolute;
+width: 299px;
+height: 276px;
+left: 586px;
+top: 550px;
+
+
+}
+
+.box3{
+    position: absolute;
+width: 1421px;
+height: 1410px;
+left: 700px;
+top: -155px;
+}
+
+.logo{
+    position: absolute;
+width: 167px;
+height: 73px;
+left: 91px;
+top: 39px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 54px;
+line-height: 77px;
+
+/* or 143% */
+letter-spacing: 0.015em;
+
+color: #000000;
+}

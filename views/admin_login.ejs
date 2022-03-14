@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dro-MentorLogin</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <p class="logo">Drop</p>
+        <p class="quote">Start Your Success with Drop Now !</p>
+        <button class="loginasadmin"><a href="/">Login as Learner</a></button>
+        <div class="login-container">
+            <p class="head">Drop-Mentor</p>
+            <form method="post">
+                <input class="inputs" type="text" placeholder="Name" name="username" required id="userName">
+                <input class="inputs" required placeholder="Email" name="useremail" type="email">
+                <input class="inputs" required placeholder="Password" name="password" type="password">
+                <% if(typeof error !== 'undefined' && error.length>0){%>
+                    <p style="color: red; text-align: center;">
+                        <%= error %>
+                    </p>
+                    <% }%> <input class="inputs" placeholder="Password" value="Login" type="submit">
+            </form>
+            <a href="adminRegister" class="acc">Create an new Account</a>
+        </div>
+
+
+        <svg class="box1" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="
+            M 0, 47
+            C 0, 0 0, 0 47, 0
+            S 94, 0 94, 47
+                94, 94 47, 94
+                0, 94 0, 47
+        " fill="#001AFF" opacity="10%" transform="rotate(
+            37,
+            100,
+            100
+        ) translate(
+            53
+            53
+        )"></path></svg>
+
+        <svg class="box2" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="
+            M 0, 47
+            C 0, 0 0, 0 47, 0
+            S 94, 0 94, 47
+                94, 94 47, 94
+                0, 94 0, 47
+        " fill="#001AFF" opacity="10%" transform="rotate(
+            37,
+            100,
+            100
+        ) translate(
+            53
+            53
+        )"></path></svg>
+
+        <svg class="box3" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="
+            M 0, 47
+            C 0, 0 0, 0 47, 0
+            S 94, 0 94, 47
+                94, 94 47, 94
+                0, 94 0, 47
+        " fill="#001AFF" opacity="10%" transform="rotate(
+            37,
+            100,
+            100
+        ) translate(
+            53
+            53
+        )"></path></svg>
+    </div>
+</body>
+
+</html>

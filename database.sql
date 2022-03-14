@@ -1,0 +1,2 @@
+create table loginuser(user_id int primary key not null AUTO_INCREMENT,user_name varchar(255));
+create table Videos(id int primary key not null AUTO_INCREMENT,course_name varchar(255),url varchar(255),catergory varchar(255),descs varchar(255));
