@@ -1,7 +1,7 @@
 //Import
 const express = require('express')
 const app = express()
-const port = 5000
+const port = 5001
 const mysql = require('mysql')
 const bodyparser = require('body-parser');
 const encoder = bodyparser.urlencoded({ extended: false });
@@ -349,4 +349,4 @@ app.get('/url_converter', (req, res) => {
 })
 
 //Listen on port 5000
-app.listen(port, () => console.log("listening"))
+app.listen(process.env.PORT || port, () => console.log("listening"))
